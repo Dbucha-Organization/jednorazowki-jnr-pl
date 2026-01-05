@@ -188,7 +188,7 @@ h4 {
 
 /* Header */
 .header {
-  padding: 20px 0;
+
   position: fixed;
   width: 100%;
   top: 0;
@@ -974,6 +974,9 @@ footer svg {
   footer {
     align-items: center;
     padding: 40px 40px;
+  }
+  .warn{
+    font-size: 10px !important;
   }
   .footer-logo {
     margin-right: 0;

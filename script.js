@@ -30,6 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
 const city = document.getElementById("city");
 const cont = document.querySelectorAll(".foot-cont-three a");
 
+// Hide the top warning when the page is scrolled
+const warn = document.querySelector(".warn");
+if (warn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      warn.style.display = "none";
+    } else {
+      warn.style.display = "";
+    }
+  });
+}
+
 city.addEventListener("click", toggleCont);
 function toggleCont() {
   city.classList.toggle("active");

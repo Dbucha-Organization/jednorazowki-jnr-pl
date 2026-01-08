@@ -89,3 +89,8 @@ if (seeMoreBtn) {
     seeMoreBtn.classList.add("hidden");
   });
 }
+
+const yearSpan = document.querySelector('#year');
+if (yearSpan) {
+    yearSpan.innerText = new Date().getFullYear();
+}
